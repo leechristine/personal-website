@@ -2,7 +2,7 @@
  * Theme variables - Global
  */
 $tvg_white: #ffffff;
-$tvg_black: #1a1a1a;
+$tvg_black: #1f1f1f;
 
 /*
  * Theme variables - Light
@@ -35,7 +35,10 @@ $themes: (
     var_secondary: $tvl_pink,
     var_accent: $tvg_black,
     var_white: $tvg_white,
-    var_black: $tvg_black
+    var_black: $tvg_black,
+    var_base: $tvg_white,
+    var_opposite: $tvg_black,
+    bgr_one: $tvl_yellow
   ),
   dark: (
     bgr_grad_one: linear-gradient($tvd_red, $tvd_purple),
@@ -44,7 +47,9 @@ $themes: (
     var_secondary: $tvd_purple,
     var_accent: $tvd_yellow,
     var_white: $tvg_black,
-    var_black: $tvg_black
+    var_black: $tvg_black,
+    var_base: $tvg_black,
+    var_opposite: $tvg_white
   ),
 );
 
