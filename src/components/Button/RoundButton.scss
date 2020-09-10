@@ -1,0 +1,15 @@
+@import 'assets/styles/button.scss';
+
+.round-btn {
+  display: flex;
+  height: 55px;
+  width: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  font-size: 17pt;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+}
