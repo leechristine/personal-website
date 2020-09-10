@@ -1,0 +1,24 @@
+@import 'assets/styles/themes.scss';
+
+.toggle-btn {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+
+  @include themify($themes) {
+    background-color: themed('var_secondary');
+    border: 1px solid themed('var_secondary');
+    border-radius: 22px;
+  }
+
+  &:hover {
+    @include themify($themes) {
+      background-color: themed('var_white');
+    }
+  }
+}
