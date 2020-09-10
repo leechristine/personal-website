@@ -1,0 +1,42 @@
+@import 'assets/styles/themes.scss';
+
+.navbar-container {
+  position: fixed;
+  width: calc(100% - 40px);
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+  .navbar-start {
+    display: flex;
+    align-items: center;
+
+    .navbar-brand {
+      display: flex;
+      margin-right: 10px;
+    }
+
+    .navbar-menu {
+      display: flex;
+
+      .navbar-item {
+        margin: 0 10px;
+      }
+    }
+
+    .navbar-item {
+      font-weight: 700;
+      text-decoration: none;
+
+      @include themify($themes) {
+        color: themed('var_accent');
+      }
+    }
+  }
+
+  .navbar-end {
+    display: flex;
+  }
+}
