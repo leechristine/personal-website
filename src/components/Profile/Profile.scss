@@ -1,0 +1,35 @@
+@import 'assets/styles/themes.scss';
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+
+  @include themify($themes) {
+    color: themed('var_accent');
+  }
+
+  .profile-name {
+    font-size: 48pt;
+    font-weight: 500;
+    letter-spacing: 4pt;
+    margin-bottom: 12px;
+  }
+
+  .profile-title {
+    font-size: 15pt;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    margin-bottom: 5px;
+  }
+
+  .profile-links-container {
+    display: flex;
+
+    .profile-link {
+      margin: 20px 15px;
+      text-decoration: none;
+    }
+  }
+}
