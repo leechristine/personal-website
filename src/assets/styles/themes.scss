@@ -1,20 +1,50 @@
 /*
- * Theme variables
+ * Theme variables - Global
  */
-$pink: #f7cac9;
-$blue: #b3cee5;
+$tvg_white: #ffffff;
+$tvg_black: #1a1a1a;
+
+/*
+ * Theme variables - Light
+ */
+$tvl_purple: #5c497e;
+$tvl_blue: #95B2E2;
+$tvl_pink: #EF97B1;
+//$orange: #FAAE7B;
+$tvl_orange: #FCCA78;
+$tvl_yellow: #FAEC72;
+
+/*
+ * Theme variables - Dark
+ */
+$tvd_indigo: #0a061a;
+$tvd_purple: #35174d;
+$tvd_red:#973150;
+//$tvd_yellow: #e2c72f;
+$tvd_yellow: #FACD2C;
 
 /*
  * Theme definitions
  */
 $themes: (
   light: (
-    bgr_primary: $pink
-    //backgroundColor: #f7cac9
+    // background gradient
+    bgr_grad_one: linear-gradient($tvl_blue, $tvl_pink),
+    bgr_grad_two: linear-gradient($tvl_pink, $tvl_orange),
+    var_primary: $tvl_blue,
+    var_secondary: $tvl_pink,
+    var_accent: $tvg_black,
+    var_white: $tvg_white,
+    var_black: $tvg_black
   ),
   dark: (
-    bgr_primary: $blue
-    //backgroundColor: #b3cee5
+    bgr_grad_one: linear-gradient($tvd_red, $tvd_purple),
+    bgr_grad_two: linear-gradient($tvd_purple, $tvd_indigo),
+    var_primary: $tvd_red,
+    var_secondary: $tvd_purple,
+    var_accent: $tvd_yellow,
+    var_white: $tvg_black,
+    var_black: $tvg_black
   ),
 );
 
