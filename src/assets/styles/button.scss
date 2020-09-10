@@ -1,0 +1,54 @@
+@import 'assets/styles/themes.scss';
+
+.secondary-btn {
+  @include themify($themes) {
+    background-color: themed('var_secondary');
+    border: 1px solid themed('var_secondary');
+    color: themed('var_base');
+  }
+
+  &:hover {
+    @include themify($themes) {
+      background-color: themed('var_base');
+      color: themed('var_secondary');
+    }
+  }
+}
+
+.accent-btn {
+  @include themify($themes) {
+    background-color: themed('var_accent');
+    border: 1px solid themed('var_accent');
+    color: themed('var_base');
+  }
+
+  &:hover {
+    @include themify($themes) {
+      background-color: themed('var_base');
+      color: themed('var_accent');
+    }
+  }
+
+  &.outlined-btn {
+    @include themify($themes) {
+      background-color: transparent;
+      border: 1px solid themed('var_accent');
+      color: themed('var_accent');
+    }
+  
+    &:hover {
+      @include themify($themes) {
+        background-color: themed('var_accent');
+        color: themed('var_base');
+      }
+    }
+  }
+
+  &.glow-btn {
+    &:hover {
+      @include themify($themes) {
+        //box-shadow: 0 0 25px 13px themed('var_accent');
+      }
+    }
+  }
+}

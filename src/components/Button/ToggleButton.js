@@ -26,8 +26,14 @@ class ToggleButton extends React.Component {
   }
 
   render() {
+    const {
+      color,
+      style,
+      hover
+    } = this.props;
+
     return (
-      <button className="toggle-btn" onClick={ () => {
+      <button className={`toggle-btn ${ color }-btn ${ style }-btn ${ hover }-btn`} onClick={ () => {
         this.toggleIcon();
         this.props.onToggle();
       }}>
