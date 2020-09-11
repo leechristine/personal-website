@@ -10,18 +10,26 @@ $tvg_black: #1f1f1f;
 $tvl_purple: #5c497e;
 $tvl_blue: #95B2E2;
 $tvl_pink: #EF97B1;
-//$orange: #FAAE7B;
+$tvl_orange-dark: #db600d;
 $tvl_orange: #FCCA78;
 $tvl_yellow: #FAEC72;
+$tvl_grey_lighter: #fafafa;
+$tvl_grey_light: #f0f0f0;
+$tvl_grey: #dedede;
 
 /*
  * Theme variables - Dark
  */
-$tvd_indigo: #0a061a;
-$tvd_purple: #35174d;
 $tvd_red:#973150;
+$tvd_purple_light: #faf2ff;
+$tvd_purple: #35174d;
+$tvd_indigo: #0a061a;
+$tvd_blue: #0c1221;
 //$tvd_yellow: #e2c72f;
 $tvd_yellow: #FACD2C;
+$tvd_grey_lighter: #3d3d3d;
+$tvd_grey_light: #2e2e2e;
+$tvd_grey: #242424;
 
 /*
  * Theme definitions
@@ -38,7 +46,15 @@ $themes: (
     var_black: $tvg_black,
     var_base: $tvg_white,
     var_opposite: $tvg_black,
-    bgr_one: $tvl_yellow
+    bgr_one: $tvl_yellow,
+    txt_primary: $tvl_orange_dark,
+    txt_accent: $tvg_black,
+    wdw_bgr: $tvl_grey,
+    wdw_bar: $tvl_grey_lighter,
+    wdw_hov: $tvl_grey_light,
+    wdw_adr: $tvl_grey_light,
+    wdw_pg_abt: $tvl_yellow,
+    wdw_div: linear-gradient($tvl_pink, $tvl_orange)
   ),
   dark: (
     bgr_grad_one: linear-gradient($tvd_red, $tvd_purple),
@@ -49,7 +65,16 @@ $themes: (
     var_white: $tvg_black,
     var_black: $tvg_black,
     var_base: $tvg_black,
-    var_opposite: $tvg_white
+    var_opposite: $tvg_white,
+    bgr_one: $tvd_blue,
+    txt_primary: $tvd_purple_light,
+    txt_accent: $tvd_yellow,
+    wdw_bgr: $tvd_grey,
+    wdw_bar: $tvd_grey_lighter,
+    wdw_hov: $tvd_grey_light,
+    wdw_adr: $tvd_grey,
+    wdw_pg_abt: $tvd_blue,
+    wdw_div: linear-gradient($tvd_red, $tvd_purple)
   ),
 );
 
