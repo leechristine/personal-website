@@ -36,5 +36,21 @@
       justify-content: center;
       align-items: center;
     }
+
+    &-footer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      .footer-text {
+        margin-bottom: 13px;
+        font-size: 9.5pt;
+        font-weight: 500;
+
+        @include themify($themes) {
+          color: themed('txt_accent');
+        }
+      }
+    }
   }
 }

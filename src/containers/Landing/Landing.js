@@ -73,6 +73,11 @@ class App extends React.Component {
             <img src={ cloud } style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
           </ParallaxLayer>
 
+          {/* footer */}
+          <ParallaxLayer className="parallax-footer" offset={1} speed={0.7} >
+            <div className="footer-text">Made by Christine Lee © 2020</div>
+          </ParallaxLayer>
+
           {/* page 1 - profile */}
           <ParallaxLayer className="parallax-profile" offset={0} speed={0.1} >
             <Profile />
@@ -80,7 +85,7 @@ class App extends React.Component {
           </ParallaxLayer>
 
           {/* page 2 - about */}
-          <ParallaxLayer className="parallax-about" offset={1} speed={0.7} >
+          <ParallaxLayer className="parallax-about" offset={1} speed={0.2} >
             <About />
             <ParallaxLayer offset={0} speed={-0} onClick={() => this.parallax.scrollTo(0)} />
           </ParallaxLayer>
