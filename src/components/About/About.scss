@@ -1,0 +1,234 @@
+@import 'assets/styles/themes.scss';
+
+.about-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .about-header {
+    position: absolute;
+    top: -65px;
+    font-size: 22pt;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+    @include themify($themes) {
+      color: themed('txt_primary');
+    }
+  }
+
+  .window-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 560px;
+    border-radius: 8px;
+    z-index: 1;
+
+    @include themify($themes) {
+      background-color: themed('wdw_bgr');
+    }
+
+    .window-head {
+      display: flex;
+      align-items: center;
+      border-radius: 8px 8px 0 0;
+
+      .window-control-container {
+        display: flex;
+        padding: 0 10px;
+
+        .window-control {
+          background-color: #fff;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          margin: 0 3px;
+
+          &.close {
+            background-color: #F8584F;
+          }
+
+          &.minimize {
+            background-color: #FFBC2D;
+          }
+
+          &.expand {
+            background-color: #2EC93F;
+          }
+        }
+      }
+
+      .window-tab-container {
+        padding-top: 8px;
+        display: flex;
+
+        .window-tab {
+          display: flex;
+          align-items: center;
+          height: 20px;
+          width: 95px;
+          padding: 2px 10px;
+          border-radius: 5px 5px 0 0;
+          font-size: 8.5pt;
+          border: none;
+          outline: none;
+
+          @include themify($themes) {
+            background-color: themed('wdw_bgr');
+            color: themed('var_opposite');
+          }
+
+          &.active {
+            @include themify($themes) {
+              background-color: themed('wdw_bar');
+            }
+          }
+
+          &.inactive {
+            @include themify($themes) {
+              border-right: 1px solid themed('wdw_bar');
+            }
+
+            &:hover {
+              @include themify($themes) {
+                background-color: themed('wdw_hov');
+              }
+            }
+          }
+
+          &.invisible {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .window-bar {
+      display: flex;
+      padding: 3px 8px;
+
+      @include themify($themes) {
+        background-color: themed('wdw_bar');
+      }
+
+      .window-address {
+        display: flex;
+        padding: 2px 13px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 9pt;
+
+        @include themify($themes) {
+          background-color: themed('wdw_adr');
+          color: themed('var_opposite');
+        }
+
+        &.inactive {
+          display: none;
+        }
+      }
+    }
+
+    .window-page-one {
+      display: flex;
+      flex-direction: column;
+      height: 260px;
+      padding: 30px 50px;
+      border-radius: 0 0 8px 8px;
+
+      @include themify($themes) {
+        background-color: themed('wdw_pg_abt');
+        color: themed('txt_primary');
+      }
+
+      &-header {
+        font-size: 12pt;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        @include themify($themes) {
+          color: themed('txt_accent');
+        }
+      }
+
+      &-text {
+        font-size: 10.5pt;
+        line-height: 1.82;
+      }
+
+      &-link {
+        margin-top: 30px;
+        background: none;
+        border: none;
+        font-size: 10.5pt;
+        text-decoration: underline;
+        outline: none;
+        cursor: pointer;
+
+        @include themify($themes) {
+          color: themed('txt_accent');
+        }
+      }
+
+      &.inactive {
+        display: none;
+      }
+    }
+
+    .window-page-two {
+      display: flex;
+      flex-wrap: wrap;
+      height: 260px;
+      padding: 30px 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 0 8px 8px;
+
+      @include themify($themes) {
+        background-color: themed('wdw_pg_abt');
+        color: themed('txt_primary');
+      }
+
+      &-image-container {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        padding: 13px 8px 50px;
+        border-radius: 4px 4px 0 0;
+        margin: 10px;
+
+        @include themify($themes) {
+          background-color: themed('var_base');
+        }
+      }
+
+      &-image {
+        height: 180px;
+      }
+
+      &-image-text {
+        max-width: 125px;
+        padding: 4px 2px 0;
+        font-size: 8.5pt;
+      }
+
+      &.inactive {
+        display: none;
+      }
+    }
+
+    .primary {
+      @include themify($themes) {
+        color: themed('txt_primary');
+      }
+    }
+
+    .accent {
+      @include themify($themes) {
+        color: themed('txt_accent');
+      }
+    }
+  }
+}
