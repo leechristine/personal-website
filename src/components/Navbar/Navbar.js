@@ -13,10 +13,14 @@ class Navbar extends React.Component {
       <div className="navbar-container">
         <div className="navbar-start">
           <div className="navbar-brand">
+            {/*
             { brand }
+            */}
           </div>
           <div className="navbar-menu">
+            {/*
             { menu }
+            */}
           </div>
         </div>
         <div className="navbar-end">
