@@ -88,31 +88,31 @@ class About extends React.Component {
               with a passion for software development! I am always looking to learn and understand
               new and existing technologies and I wish to utilise my skills and knowledge to create
               technology that will bring impact to the end user. Though coding is one of my main activities,
-              I also enjoy spending my downtime colouring, playing Animal Crossing or watching the sunset ☺
+              I also enjoy spending my downtime colouring, playing Animal Crossing and watching the sunset ☺
             </div>
             <button className="window-page-one-link" onClick={ this.openPageTwo }>
-              see more about me!
+              see some pictures!
             </button>
           </div>
           <div className={ `window-page-two ${ isPageTwo }` }>
             <div className="window-page-two-image-container">
               <img className="window-page-two-image" src={ wharfMe }></img>
               <div className="window-page-two-image-text">
-                <span className="accent" style={{ fontWeight: 600 }}>this is: </span>
+                <span className="primary" style={{ fontWeight: 600 }}>this is: </span>
                 me! 👋
               </div>
             </div>
             <div className="window-page-two-image-container">
               <img className="window-page-two-image" src={ sunset }></img>
               <div className="window-page-two-image-text">
-                <span className="accent" style={{ fontWeight: 600 }}>this is: </span>
-                a pretty sunset i saw ✨
+                <span className="primary" style={{ fontWeight: 600 }}>this is: </span>
+                my love for sunsets ✨
               </div>
             </div>
             <div className="window-page-two-image-container">
               <img className="window-page-two-image" src={ sunflowerMe }></img>
               <div className="window-page-two-image-text">
-                <span className="accent" style={{ fontWeight: 600 }}>this is: </span>
+                <span className="primary" style={{ fontWeight: 600 }}>this is: </span>
                 me again 🌻
               </div>
             </div>

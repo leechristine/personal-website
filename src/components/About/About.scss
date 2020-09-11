@@ -146,7 +146,7 @@
       &-header {
         font-size: 12pt;
         font-weight: 600;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
 
         @include themify($themes) {
           color: themed('txt_accent');
@@ -159,7 +159,7 @@
       }
 
       &-link {
-        margin-top: 30px;
+        margin-top: 25px;
         background: none;
         border: none;
         font-size: 10.5pt;
@@ -188,7 +188,6 @@
 
       @include themify($themes) {
         background-color: themed('wdw_pg_abt');
-        color: themed('txt_primary');
       }
 
       &-image-container {
@@ -212,6 +211,10 @@
         max-width: 125px;
         padding: 4px 2px 0;
         font-size: 8.5pt;
+
+        @include themify($themes) {
+          color: themed('txt_accent');
+        }
       }
 
       &.inactive {
