@@ -8,7 +8,7 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import sampleResume from 'assets/docs/sample_resume.pdf';
+import resume from "assets/docs/ChristineLeeResume.pdf";
 
 class Profile extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class Profile extends React.Component {
               text={ <FontAwesomeIcon icon={ faGithub } /> }
             />
           </a>
-          <a className="profile-link" href={ sampleResume } target="_blank">
+          <a className="profile-link" href={ resume } target="_blank">
             <RoundButton color="accent" style="outlined" hover="glow"
               text={ <FontAwesomeIcon icon={ faFile } /> }
             />
